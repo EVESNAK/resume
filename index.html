@@ -6,81 +6,100 @@
     <meta name="keywords" content="work, cv, resume">
     <meta name="discription" content="Этот сайт предназначен для резюме">
     <title>Resume</title>
+
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
-
-    <h1>Есипов Евгений</h1>
-
-<p><img src="0097.jpg" width="300" alt="Есипов Евгений"></p>
     
-<p>Увлекаюсь <strong>музыкой,путешествиями и программированию.</strong></p>
-    
-<p>Хочу научиться программировать, найти удалённую работу и <em><strong>жить в путешествиях!</strong></em></p>
-   
+    <div class="container">
 
-<h4>Мои социальные сети:</h4>
+    <div class="info">
+            
+    <img src="Imgs/001.jpg" alt="Есипов Евгений" class="avatar"> 
+            
+        <div class="info-text">
+            
+        <h1>Есипов Евгений</h1>
+            
+        <p>Увлекаюсь <strong>музыкой,путешествиями и программированию.</strong></p>
+            
+        <p>Хочу научиться программировать, найти удалённую работу и <em><strong>жить в путешествиях!</strong></em></p>
 
-    <a href="https://t.me/eves_nak" target="_blank" >Телеграмм </a>
-    |
-    <a href="https://vk.com/evesnak" target="_blank">ВК</a>
 
-    <br>
+        <h4>Мои социальные сети:</h4>
 
-    <h3>Мои хобби</h3>
+        <a href="https://t.me/eves_nak" target="_blank" >Телеграмм </a>
+            |
+        <a href="https://vk.com/evesnak" target="_blank">ВК</a>
+        </div>
+    </div>
 
-    <ol>
-        <li>Программирование</li>
-        <li>Музыка</li>
-        <li>Путешествия</li>
-        <li>Спорт</li>
-    </ol>
+    <div class="card bg-yellow">
 
-    <h2>Опыт работы</h2>
+    <h2>Мои хобби</h2>
 
-    <table>
-        <thead>
-        <tr>
-            <th>Название</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-        </thead>
-        <tr>
-           <td>Тортуга</td>
-           <td>Управляющий</td> 
-           <td>4</td> 
-        </tr>
-        <tr>
-           <td>Сервионика</td> 
-           <td>IT-специалист</td> 
-           <td>1</td> 
-        </tr>
-    </table>
+        <ol class="list">
+            <li>Программирование</li>
+            <li>Музыка</li>
+            <li>Путешествия</li>
+            <li>Спорт</li>
+        </ol>
+    </div>
 
-    <h2>Связаться со мной</h2>
+    <div class="card bg-red"> 
 
-    <form action="/">
+        <h2 >Опыт работы</h2>
+
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                    <th>Название</th>
+                    <th>Должность</th>
+                    <th>Год</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                <tr>
+                    <td>Тортуга</td>
+                    <td>Управляющий</td> 
+                    <td>4</td> 
+                </tr>
+                <tr>
+                    <td>Сервионика</td> 
+                    <td>IT-специалист</td> 
+                    <td>1</td> 
+                </tr>
+                </tbody>
+            </table>
+    </div>
         
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+
+    <form action="/" class="form">
+        <h2>Связаться со мной</h2>
+
+        <div class="form-row">
+                        
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" placeholder="Введите имя">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" placeholder="Введите email">
+            </div>
         </div>
 
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
-        </div>
-<br>
-        <div>
-            <label for="message">Ваше сообщение:</label> 
-            <br>
+        <div class="form-group">
+            <label for="message">Ваше сообщение:</label>            
             <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
-
         </div>
-        
-        <button type="submit">Отправить</button>
-    </form>
-        
+                    
+        <button type="submit" class="btn">Отправить</button>
+        </form>
+    </div>            
+    </div>
 </body>
 </html>
